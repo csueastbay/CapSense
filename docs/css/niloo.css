@@ -1,0 +1,54 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Love Ya Like A Sister', cursive;*/
+
+/*Colors:
+
+Dark blue-gray: #262D42;
+Brown: #4F423E;
+Blue: #44578F;
+Dark Green: #5A7537;
+Light Green: #718F4A;
+*/
+
+h1{
+  font-family: 'Love Ya Like A Sister', cursive;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 4rem;
+  color: #262D42;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #44578F;
+  margin-top: 20px;
+}
+
+.subtitle{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  color: #718F4A;
+}
+
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: normal;
+
+}
+
+img{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+h1{font-size: 2rem;}
+p{width: 100%;}
+}
