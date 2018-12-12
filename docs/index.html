@@ -1,42 +1,315 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome home</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Where do I fit?</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/capsense.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!--    <ul class="grid-x menu">
+      <li class="cell small-6 medium-3"></li>
+      <li class="cell small-6 medium-3"></li>
+      <li class="cell small-12 medium-3"><a href="#">PROJECT</a></li>
+      <li class="cell small-12 medium-3"><a href="documentation.html">DOCUMENTATION</a></li>
+    </ul>
+-->
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h1>Where do I fit?</h1>
+      </div>
+    </div>
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <p class="subtitle"><i>Where do I fit&#63;</i> is a proposed, interactive touch wall, researched by the 2019 Interaction Design Graduate cohort at Cal State East Bay.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <img src="images/home copy.jpg" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>The Story</h2>
+        <p>In Fall 2018, California State University East Bay academic system converted from quarters to semesters. Along with this change, the Art department revised and added several new degrees. The Art and Multimedia departments needed a way to
+          gauge the student’s projected careers and interests. The mission of this project is to research the creation of a full wall capacitive touch sensor to poll students for this purpose.
+        </p>
+        <p>
+          This project was done in partnership with the Multimedia’s Graduate class MM680
+          The Goal of the class was to use our combined efforts to better understand mutual capacitive sensing through a series of investigations. These included a general survey of research papers and projects on the subject, building and
+          programming multiple models using micro controllers, and sensors and finally implementing a design challenge.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-8 cell">
+        <h2 class="challenge">The Challenge</h2>
+        <ul>
+          <li>Flex our research and UX muscles </li>
+          <li>Build a framework for future investigations on Capacitive Sensing</li>
+          <li>Build a series of prototypes that could be used for a touch wall polling station</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>Research</h2>
+        <p>We started be reading a number of articles and following tutorials individually then sharing our findings.</p>
+
+        <h4><a href="http://yang-zhang.me/research/Wall/Wall.html" target=”_blank”>Wall++</a></h4>
+        <h5>Yang Zhang</h5>
+        <p>Our point of departure, this is a rigorous study on creating a multi-capacitive wall touch using an low cost paint.</p>
+
+
+        <h4><a href="https://www.researchgate.net/publication/307633021_WireTouch_An_Open_Multi-Touch_Tracker_based_on_Mutual_Capacitance_Sensing" target=”_blank”>An Open Multi-Touch Project</a></h4>
+        <h5>Armin Wagner & George Kaindl</h5>
+        <p>Excellent description of mutual capacitance! </p>
+
+
+        <h4><a href="http://www.sebastianboring.com/content/publications/prints/wimmer.PerCom-2007.captoolkit.pdf" target=”_blank”>A Capacitive Sensing Toolkit for Pervasive Activity Detection and Recognition
+          </a></h4>
+        <h5>Raphael Wimmer, Matthias Kranz, Sebastian Boring, Albrecht Schmid
+        </h5>
+        <p>This paper is pretty dense, it presents a suite of resources and approaches
+          for creating your own mutual capacitive system.
+        </p>
+
+
+        <h4><a href="http://playground.arduino.cc/Main/CapacitiveSensor" target=”_blank”>Arduino Playground: Capacitive Sensor Library
+          </a></h4>
+        <h5>Paul Badger
+        </h5>
+        <p>OGet going with Capacitive Sensing on Arduino Uno
+        </p>
+
+
+        <h4><a href="http://tommydylan.co.uk/capacitancetouch/" target=”_blank”>Capacitive Touch (Uses Paul Badger’s Library)
+          </a></h4>
+        <p>Quick Start Guide for Arduino Nano
+        </p>
+
+
+        <h4><a href="https://www.instructables.com/id/Capacitive-Sensing-for-Dummies/" target=”_blank”>Instructables: Capacitive sensing for Dummies
+
+          </a></h4>
+        <p>Specifically, Step 5: Cap Sensor Diagnostics Tool
+
+        </p>
+        <figure>
+          <img src="images/captest_boardLaura.jpg" alt="instructables">
+        </figure>
+
+
+        <h4><a href="https://groups.google.com/forum/#!topic/node-red/ThwhcHKqe-M" target=”_blank”>How To Push Data from Raspberry PI to Node Red .. And Beyond!
+
+          </a></h4>
+        <p>This was the guide we used to get capsense data pushed to Google Sheets
+
+        </p>
+
+
+        <h4><a href="http://tommydylan.co.uk/capacitancetouch/" target=”_blank”>Multi Capacitive Gerber Panels
+
+          </a></h4>
+        <p>We did some serious inquiries into this, working with the Computer Science Department.
+          Each panel has 14 wire terminations into a board that contains the following ICs:
+          The large plastic panels with imbedded wires are from a gerber pattern cutter. As seen <a href="https://www.youtube.com/watch?v=O0DSOUDYadk">here</a>
+
+        </p>
+
+
+        <h4><a href="http://www.ti.com/lit/ds/symlink/sn74ls00.pdf" target=”_blank”>SN74LS00N
+          </a></h4>
+        <p>The SNx4xx00 devices contain four independent, 2-input NAND gates. The devices perform the Boolean function Y = A .B or Y = A + B in positive logic.
+
+        </p>
+
+
+        <h4><a href="http://www.ti.com/lit/ds/symlink/lmc662.pdf" target=”_blank”>LMC662 CMOS Dual Operational Amplifier
+
+          </a></h4>
+
+
+
+        <h4><a href="https://www.st.com/en/switches-and-multiplexers/hcf4051.html" target=”_blank”>Hcf4051be
+          </a></h4>
+        <p>Single 8-Channel Analog Multiplexer/Demultiplexer
+
+        </p>
+
+
+
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>Prototyping</h2>
+        <p>Based on all our inquiries, we decided to create a series of capacitive sensing nodes that would run through an arduino, using a Raspberry Pi with the Firmata library. Firmata would send the registered touches through Node Red to a Google
+          Sheet. With this framework we could install a wall mounted interface and send poll responses wirelessly.</p>
+        <p>While half the team worked on developing the more sophisticated prototype, the other half did a deep-dive into the UX. We decided to create a few simple, paper interfaces to start gauging what our user base wanted to see in a touch wall
+          or if they would even want to interact with one.</p>
+        <p>We created a really open-ended cultural probe, then a poll that listed of all the possible careers we could think of, with an add your own option. Finally we did a card sort of the 60+ responses. </p>
+      </div>
+    </div>
+
+
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="fcr2rl-orbit" data-use-m-u-i="false" data-options="autoPlay:false;" data-resize="t2t5rx-orbit" id="t2t5rx-orbit" data-events="resize">
+      <div class="orbit-wrapper">
+        <div class="orbit-controls">
+          <button class="orbit-previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀︎</button>
+          <button class="orbit-next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶︎</button>
         </div>
+        <ul class="orbit-container orbit--modal" tabindex="0" style="height: 0px;">
+          <li class="is-active orbit-slide no-motionui" data-slide="0">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="images/p1.jpg" alt="Space">
+            </figure>
+          </li>
+          <li class="orbit-slide no-motionui" data-slide="1" style="position: relative; display: none;">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="images/p2.jpg" alt="Space">
+            </figure>
+          </li>
+          <li class="orbit-slide no-motionui" data-slide="2" style="position: relative; display: none;">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="images/p3.jpg" alt="Space">
+            </figure>
+          </li>
+          <li class="orbit-slide no-motionui" data-slide="3" style="position: relative; display: none;">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="images/p4.jpg" alt="Space">
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">first slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">second slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">third slide details.</span></button>
+        <button data-slide="4"><span class="show-for-sr">fourth slide details.</span></button>
+      </nav>
+    </div>
+
+    <div class="grid-x">
+      <div class="large-12 cell">
+        <p>We created a really open-ended cultural probe, then a poll that listed of all the possible careers we could think of, with an add your own option. Finally we did a card sort of the 60+ responses. <br>From that we created 4 personas:</p>
       </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <ul>
-           <li><a href="laura.html"></a>Laura</li>
-           <li>Le</li>
-           <li>Niloo</li>
-           <li>Stephen</li>
-           <li>Ian</li>
-         </ul>
-          </div>
-        </div>
+      <h2 class="small-12">Persona &amp User Flow</h2>
+      <div class="cell small-12 large-6 persona">
+        <img src="images/cash.jpg" alt="persona">
+      </div>
+      <div class="cell small-12 large-6  persona">
+        <img src="images/ev.jpg" alt="persona">
       </div>
 
+
+      <div class="cell small-12 large-6 persona">
+        <img src="images/janelle.jpg" alt="persona">
+      </div>
+      <div class="cell small-12 large-6  persona">
+        <img src="images/leroy.jpg" alt="persona">
+      </div>
+    </div>
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>Visual Design</h2>
+        <p>Gradually we moved to a tech model that would conceal the copper panels and a user experience to show a range of interconnected disciplines across the fields of art and design. Based on the card sort, we also wanted to reserve the open
+          ended category, “I don’t know.” This would afford users a valuable option to express their uncertainty about where they fit.
+        </p>
+        <figure>
+          <img src="images/Le_icons.png" alt="icon design">
+          <figcaption>Buttons to represent individual careers were first designed by Le
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>Conclusion</h2>
+        <p>Ultimately, we hit some hurdles attempting to create a system of microcontrollers that could handle the amount of sensor outputs required. The hurdle came when capturing the sensor readings from Node Red into Google sheets.
+        </p>
+        <img src="images/poster.jpg" alt="final poster">
+      </div>
+    </div>
+
+    <div class="grid-x">
+      <p class="small-12">We hope that our findings can be a springboard to the next iteration. We welcome contributors to our GitHub Page.</p>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <h2>Meet the Team</h2>
+      </div>
+
+      <div class="small-5 medium-3 large-2 teamPic">
+        <img src="images/nk.png" alt="">
+        <p class="teamName"><b>Niloo Khodabakhsh</b><br>UX & Website Design</p>
+      </div>
+      <div class="small-5 medium-3 large-2 teamPic">
+        <img src="images/lg.png" alt="">
+        <p class="teamName"><b>Laura Greene</b><br>UX Research & Documentation</p>
+      </div>
+      <div class="small-5 medium-3 large-2 teamPic">
+        <img src="images/ps.jpg" alt="">
+        <p class="teamName"><b>Pierre Sagarminaga</b><br>Creative Technologist</p>
+      </div>
+      <div class="small-5 medium-3 large-2 teamPic">
+        <img src="#" alt="">
+        <p class="teamName"><b>Hung Le</b><br>Graphic Design</p>
+      </div>
+      <div class="small-5 medium-3 large-2 teamPic">
+        <img src="images/sl.png" alt="">
+        <p class="teamName"><b>Stephen Leber</b><br>Creative Technologist</p>
+      </div>
 
     </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+
+
+
+  </div>
+
+  </div>
+
+  <footer class="wrap">
+    <h6>© 2018 California State University, East Bay</h6>
+  </footer>
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
