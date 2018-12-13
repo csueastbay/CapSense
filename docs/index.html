@@ -260,10 +260,20 @@
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
         <h2>Conclusion</h2>
-        <p>Ultimately, we hit some hurdles attempting to create a system of microcontrollers that could handle the amount of sensor outputs required. The hurdle came when capturing the sensor readings from Node Red into Google sheets.
+        <p>Ultimately, we hit some hurdles attempting to create a system of microcontrollers that could handle the amount of sensor outputs required. The hurdle came when the Arudino sketch not being fast enough to able to detect touch reliably send the data to Node Red
+
+We hit some hurdles attempting to accurately detect touch from the Arduino that was slaved to the Raspberry Pi. In order for Node-Red to detect the Arduino prototype and capacitive sensors at the same time, we needed to combine the CapacitiveSense library  with the Firmata library in the Arduino sketch. This was taken from Edutec’s Snap4Arduino sketch. This is where the complexity began because the mash-up of code from the Firmata library had a lot of  functions and variables that didn’t need to be used for what we were trying to accomplish. Commenting out this code was breaking the entire sketch and so it had to be left alone. After adding more lines of code to increase the amount of sensors to 7, the sketch wasn’t able to be uploaded to the Arduino. After decreasing the amount of sensors to 3 and uploading the sketch, the Arduino IDE started to display the error “Low memory available, stability problems may occur”. We noticed that it could only handle a maximum of two sensors before it started to have memory issues. Ultimately, this first prototype was a learning experience in capacitive sensing and we now have a better understanding of how it works.
         </p>
-        <img src="images/poster.jpg" alt="final poster">
       </div>
+      <figure class="small-12 medium-6 large-6 tech">
+        <img src="images/s-2-2.jpg" alt="fritzing sketch">
+        <figcaption>Node Red Example Diagram</figcaption>
+      </figure>
+      <figure class="small-12 medium-6 large-6 tech">
+        <img src="images/s-2-1.jpg" alt="google sheets">
+        <figcaption>Google Forms Poll | Google Sheets Live Input from Cap Sensors:
+</figcaption>
+      </figure>
     </div>
 
     <div class="grid-x">
@@ -288,7 +298,7 @@
         <p class="teamName"><b>Pierre Sagarminaga</b><br>Creative Technologist</p>
       </div>
       <div class="small-5 medium-3 large-2 teamPic">
-        <img src="#" alt="">
+        <img src="images/hl.jpg" alt="">
         <p class="teamName"><b>Hung Le</b><br>Graphic Design</p>
       </div>
       <div class="small-5 medium-3 large-2 teamPic">
